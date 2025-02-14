@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ppc_mission_interfaces)
+project(ppc_planning_interfaces)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -23,6 +23,7 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Mission.srv"
+  "msg/MissionInfo.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 

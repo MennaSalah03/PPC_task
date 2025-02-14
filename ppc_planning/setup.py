@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'ppc_mission'
+package_name = 'ppc_planning'
 
 setup(
     name=package_name,
@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'server = ppc_mission.mission_server:main',
-            'client = ppc_mission.mission_client:main'
+            'mission_server = ppc_planning.mission_server:main',
+            'mission_client = ppc_planning.mission_client:main'
         ],
     },
 )
